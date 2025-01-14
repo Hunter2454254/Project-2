@@ -30,25 +30,30 @@ label {
     color: #333;
 }
 
-select {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: 2px solid #ccc;
+.car-image {
     width: 100%;
-    margin-top: 10px;
-}
-
-select:hover {
-    border-color: #008CBA;
-}
-
-img {
-    height: 250px;
-    width: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.car-image:hover {
+    transform: scale(1.1);
+}
+
+#imageArea {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
     margin-top: 20px;
+}
+
+#carImage {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .h1 {
@@ -83,6 +88,12 @@ button:hover {
     }
 
     img {
+        height: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    .car-image {
         height: 200px;
     }
 }

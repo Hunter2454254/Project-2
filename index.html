@@ -17,23 +17,33 @@
         </div>
         <div class="div">
             <div class="row align-items-center">
-                <div class="col">
-                    <label for="cars">Choose a car:</label>
-                    <select name="cars" id="cars" onchange="updateImage()">
-                        <option value="lamborghini">Lamborghini</option>
-                        <option value="ferrari">Ford</option>
-                        <option value="mercedes">ferrari</option>
-                        <option value="audi">Audi</option>
-                    </select>
+                <div class="col-6 col-md-3">
+                    <img class="car-image" src="img/Lamborghini.png" alt="Lamborghini" data-car="Lamborghini.png">
                 </div>
+                <div class="col-6 col-md-3">
+                    <img class="car-image" src="img/Ford.png" alt="Ford" data-car="Ford.png">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="car-image" src="img/BMW.png" alt="BMW" data-car="BMW.png">
+                </div>
+                <div class="col-6 col-md-3">
+                    <img class="car-image" src="img/Jeep.png" alt="Jeep" data-car="Jeep.png">                    
+                </div>
+            </div>
+
+            <div class="row mt-4">
                 <div class="col">
-                    <img id="carImage" src="img/lamborghini.webp" alt="Car Image">
+                    <div id="imageArea" class="image-area">
+                        <img id="carImage" src="img/Lamborghini.png" alt="Car Image">
+                    </div>
+                    <button class="btn-show-image">Hover to Show Car Image</button>
                 </div>
             </div>
         </div>
     </div>
 
-   
+    <script src="js/java.js"></script>
 </body>
 
 </html>
+
