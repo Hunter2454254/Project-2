@@ -76,6 +76,7 @@ button {
 
 button:hover {
     background-color: #45a049;
+    color: white; /* Ensuring text is visible */
 }
 
 .col {
